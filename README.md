@@ -20,7 +20,6 @@
   <a href="#casestudies"><b>📑 Case Studies</b></a> •
   <a href="#pillars"><b>🧱 10 Engineering Pillars</b></a> •
   <a href="#projects"><b>🚀 Projects</b></a> •
-  <a href="#education"><b>🎓 Education</b></a> •
   <a href="#telemetry"><b>📊 Telemetry</b></a> •
   <a href="#connect"><b>📫 Connect</b></a>
 </p>
@@ -487,20 +486,6 @@ flowchart TD
 | **[multi-cloud-devops-platform](https://github.com/AnilLatta/multi-cloud-devops-platform)** | `Azure` `AWS` `GCP` `Terraform` `Kubernetes` | Tri-cloud DevOps platform standardizing automated infrastructure provisioning, GitOps, and Kubernetes workloads uniformly across AWS, Azure, and GCP. |
 | **[TerraformModules](https://github.com/AnilLatta/TerraformModules)** | `Terraform` `IaC` `Multi-Cloud` | Enterprise-grade, reusable Terraform module library enforcing remote state locking and modular networking. |
 | **[GenAI](https://github.com/AnilLatta/GenAI)** | `GenAI` `Python` `AI Ops` | Next-generation Generative AI workflows, LLM automation tools, and agentic scripts to supercharge cloud engineering. |
-
-</div>
-
----
-
-<a name="education"></a>
-## 🎓 Educational Foundation & Academic Credentials
-
-<div align="center">
-
-| Degree / Credential | Institution / University | Timeline | Grade / Honors |
-| :--- | :--- | :--- | :--- |
-| 🎓 **Bachelor of Technology (B.Tech)**<br>Electronics & Communication Engineering | **Guru Gobind Singh College of Engineering & Technology**<br>Talwandi Sabo, Bathinda, Punjab | **2006 – 2009** | **81% (First Class with Distinction)** |
-| 📜 **Diploma in Engineering**<br>Electronics & Communication Engineering | **Guru Gobind Singh Polytechnic**<br>Talwandi Sabo, Bathinda, Punjab | **2003 – 2006** | **79% (First Class)** |
 
 </div>
 
