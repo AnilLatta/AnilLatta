@@ -479,12 +479,14 @@ flowchart TD
 
 | Repository | Core Tech Stack | Architectural & Operational Description |
 | :--- | :--- | :--- |
-| **[TerraformModules](https://github.com/AnilLatta/TerraformModules)** | `Terraform` `IaC` `Multi-Cloud` | Enterprise-grade, reusable Terraform module library enforcing remote state locking, modular networking, and compliance guardrails. |
-| **[Ado-pipeline2026](https://github.com/AnilLatta/Ado-pipeline2026)** | `Azure DevOps` `YAML` `CI/CD` | Multi-stage Azure DevOps YAML pipeline framework embedding DevSecOps security gates, automated tests, and environment promotions. |
+| **[devsecops-pipeline-integration](https://github.com/AnilLatta/devsecops-pipeline-integration)** | `Azure DevOps` `SonarQube` `Trivy` `Defender` `Terraform` | Integrated shift-left security scanning, container CVE gates, secret management, and compliance checks into multi-stage CI/CD pipelines. |
+| **[azure-terraform-infra-automation](https://github.com/AnilLatta/azure-terraform-infra-automation)** | `Terraform` `Azure` `AKS` `Key Vault` `IaC` | Reusable modular Infrastructure as Code provisioning secure and scalable Azure landing zones (VNet, AKS, Key Vault, Storage, SQL). |
+| **[kubernetes-platform-implementation](https://github.com/AnilLatta/kubernetes-platform-implementation)** | `Kubernetes` `AKS` `Helm` `Docker` `HPA` | Production-grade Kubernetes microservices deployment architecture featuring enterprise Helm charts, autoscaling, and zero-downtime rolling updates. |
+| **[enterprise-cicd-modernization](https://github.com/AnilLatta/enterprise-cicd-modernization)** | `Azure DevOps` `Docker` `ACR` `AKS` `Canary` | Enterprise-grade multi-stage YAML CI/CD platform automating container builds, ACR image pushes, and automated AKS canary deployment rollouts. |
+| **[sre-observability-platform](https://github.com/AnilLatta/sre-observability-platform)** | `Prometheus` `Grafana` `Azure Monitor` `KQL` `SLO` | Centralized full-stack monitoring and observability platform delivering real-time telemetry, KQL diagnostics, and SLI/SLO error budget alerts. |
+| **[multi-cloud-devops-platform](https://github.com/AnilLatta/multi-cloud-devops-platform)** | `Azure` `AWS` `GCP` `Terraform` `Kubernetes` | Tri-cloud DevOps platform standardizing automated infrastructure provisioning, GitOps, and Kubernetes workloads uniformly across AWS, Azure, and GCP. |
+| **[TerraformModules](https://github.com/AnilLatta/TerraformModules)** | `Terraform` `IaC` `Multi-Cloud` | Enterprise-grade, reusable Terraform module library enforcing remote state locking and modular networking. |
 | **[GenAI](https://github.com/AnilLatta/GenAI)** | `GenAI` `Python` `AI Ops` | Next-generation Generative AI workflows, LLM automation tools, and agentic scripts to supercharge cloud engineering. |
-| **[azuredev-5612](https://github.com/AnilLatta/azuredev-5612)** | `Azure` `Cloud Architecture` | Core Azure enterprise cloud platform provisioning with secure networking, identity governance, and workload isolation. |
-| **[terraform_practice](https://github.com/AnilLatta/terraform_practice)** | `Terraform` `IaC Design` | Advanced infrastructure orchestration patterns covering remote backends, workspace separation, and drift handling. |
-| **[Terraform-1](https://github.com/AnilLatta/Terraform-1)** | `Terraform` `Automation` | Automated cloud provisioning templates demonstrating automated resource lifecycle management and security hardening. |
 
 </div>
 
