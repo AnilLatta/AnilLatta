@@ -20,6 +20,7 @@
   <a href="#casestudies"><b>📑 Case Studies</b></a> •
   <a href="#pillars"><b>🧱 10 Engineering Pillars</b></a> •
   <a href="#projects"><b>🚀 Projects</b></a> •
+  <a href="./LINKS.md"><b>🔗 Links Directory</b></a> •
   <a href="#telemetry"><b>📊 Telemetry</b></a> •
   <a href="#connect"><b>📫 Connect</b></a>
 </p>
@@ -476,6 +477,14 @@ flowchart TD
 
 <div align="center">
 
+<p align="center">
+  <a href="./LINKS.md">
+    <img src="https://img.shields.io/badge/🔗_View_Full_Directory-LINKS.md-0078D4?style=for-the-badge&logo=github&logoColor=white" alt="View Full Directory" />
+  </a>
+</p>
+
+### 🏢 1. Enterprise Production Architectures (Naukri Profile Featured)
+
 | Repository | Core Tech Stack | Architectural & Operational Description |
 | :--- | :--- | :--- |
 | **[devsecops-pipeline-integration](https://github.com/AnilLatta/devsecops-pipeline-integration)** | `Azure DevOps` `SonarQube` `Trivy` `Defender` `Terraform` | Integrated shift-left security scanning, container CVE gates, secret management, and compliance checks into multi-stage CI/CD pipelines. |
@@ -484,8 +493,29 @@ flowchart TD
 | **[enterprise-cicd-modernization](https://github.com/AnilLatta/enterprise-cicd-modernization)** | `Azure DevOps` `Docker` `ACR` `AKS` `Canary` | Enterprise-grade multi-stage YAML CI/CD platform automating container builds, ACR image pushes, and automated AKS canary deployment rollouts. |
 | **[sre-observability-platform](https://github.com/AnilLatta/sre-observability-platform)** | `Prometheus` `Grafana` `Azure Monitor` `KQL` `SLO` | Centralized full-stack monitoring and observability platform delivering real-time telemetry, KQL diagnostics, and SLI/SLO error budget alerts. |
 | **[multi-cloud-devops-platform](https://github.com/AnilLatta/multi-cloud-devops-platform)** | `Azure` `AWS` `GCP` `Terraform` `Kubernetes` | Tri-cloud DevOps platform standardizing automated infrastructure provisioning, GitOps, and Kubernetes workloads uniformly across AWS, Azure, and GCP. |
-| **[TerraformModules](https://github.com/AnilLatta/TerraformModules)** | `Terraform` `IaC` `Multi-Cloud` | Enterprise-grade, reusable Terraform module library enforcing remote state locking and modular networking. |
+
+### 🛠️ 2. Infrastructure as Code & Cloud Engineering Repositories
+
+| Repository | Core Tech Stack | Architectural & Operational Description |
+| :--- | :--- | :--- |
+| **[TerraformModules](https://github.com/AnilLatta/TerraformModules)** | `Terraform` `IaC` `Azure` | Enterprise-grade, reusable Terraform module library enforcing remote state locking, modular networking, and compliance guardrails. |
+| **[Ado-pipeline2026](https://github.com/AnilLatta/Ado-pipeline2026)** | `Azure DevOps` `YAML` `CI/CD` | Multi-stage Azure DevOps YAML pipeline framework embedding DevSecOps security gates, automated tests, and environment promotions. |
+| **[azuredev-5612](https://github.com/AnilLatta/azuredev-5612)** | `Azure` `Cloud Architecture` | Core Azure enterprise cloud platform provisioning with secure networking, identity governance, and workload isolation. |
+| **[Terraform-1](https://github.com/AnilLatta/Terraform-1)** | `Terraform` `IaC Automation` | Automated cloud provisioning templates demonstrating automated resource lifecycle management and security hardening. |
+| **[terraform_practice](https://github.com/AnilLatta/terraform_practice)** | `Terraform` `IaC Design` | Advanced infrastructure orchestration patterns covering remote backends, workspace separation, and drift handling. |
+| **[terraform19june2026](https://github.com/AnilLatta/terraform19june2026)** | `Terraform` `State Management` | Modular Terraform infrastructure setup with resource groups, VNets, and subnet provisioning. |
+
+### 🤖 3. AI, Emerging Tech & Practice Repositories
+
+| Repository | Core Tech Stack | Architectural & Operational Description |
+| :--- | :--- | :--- |
 | **[GenAI](https://github.com/AnilLatta/GenAI)** | `GenAI` `Python` `AI Ops` | Next-generation Generative AI workflows, LLM automation tools, and agentic scripts to supercharge cloud engineering. |
+| **[crash-course](https://github.com/AnilLatta/crash-course)** | `Git` `GitHub` `CI/CD` | Comprehensive learning repository covering Git workflows, branching strategies, and pipeline essentials. |
+| **[test](https://github.com/AnilLatta/test)** | `Git` `Sandbox` | Sandbox repository for pipeline verification, webhook testing, and integration checks. |
+
+<p align="center">
+  <b>📄 For complete links, clone commands, and direct paths, see <a href="./LINKS.md">LINKS.md</a>.</b>
+</p>
 
 </div>
 
