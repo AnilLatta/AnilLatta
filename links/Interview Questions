@@ -1,0 +1,1167 @@
+Crux was I need to jmprove in overall devops like k8s deployment manifest and cicd pipeline creation
+[7/27, 4:35 PM] Ashish - DevOpsInsiders: Creospan Interview Questions 
+1- terrafom drift 
+2 - import 
+3 - deployment process 
+4 - role and responsibilities 
+5- landing zone 
+6 - Pass (Plateform as a service 
+7- application gateway vs load balancer 
+8- how to backend communicate with database 
+9- NSG
+10- Keyvoult 
+11- how to manage state file 
+12 - cicd pipeline process 
+13 - create a storage account and write code for storing state file in blob storage ...
+[7/27, 4:35 PM] Ashish - DevOpsInsiders: Today I was these questions during interview.
+I had applied for terraform and azure.
+
+Tell me the complex incidents you have worked on, which required immediate assistance?
+1. How will you create the PMR report and sent it to the customers?
+2. How have you handled the customer downtime and how you manged it ?
+3. How will you verify the connectivity of the backend from the target system ? There will be no telnet command available
+4. When u connect to the backend how will you decide which protocol to use Tls1 or tls 2?
+5. I want to create a CSR and sign with the certificate how to do ? Explain each and every step 
+6. Components of certificate ?
+7. You root certificate got expired then tell me how will you create and implement ? full process 
+8. Have you worked on Devsecops ? How will you implement
+9. Write a cicd pipeline from starting ?
+10. How the quality gates will communicate with the SonarQube and move further in the cicd
+11. Have you worked with the PCI audit?
+12. Explain the monitoring setup and what diff. diff. agents u will use 
+13. How will you configure the alerts of pods ? How will you notify the on call guy 
+14. A CVE is announced for your production image ? what steps u would take?
+15. What is supply chain security?
+16. Design a complete Devsecops pipeline end to end ?
+17. Write a dockerfile and end to end all the steps for the pipeline 
+18. Have you worked on Helm?
+19. Describe crashloopbackoff , error or pending state 
+20. Have you worked on any GitOps tools for deployment or automation?
+21. Many questions on troubleshooting related to pods, application and http and application level 
+22. All questions are scenario based 
+23. How will you setup HPA and VPA ?
+24. How will you prevent flapping ?
+[7/27, 4:35 PM] Ashish - DevOpsInsiders: *Question based on this Interview :*
+
+1)Introduce yourself with your project details .
+2)Explain your day to activity with your team contribution.
+3)As you are saying u r working on infra side , so can u please differencete  b/w infra and application.
+4)what is the aim of your project?
+5)where you are using Azure Landing Zone in your project?,
+6)ok, lets fine, so can you pls what is a Azure Landing Zone and why we need to use it?
+7)Can you please give me brief on Azure Landing Zone Architecture?
+8)Difference between Management Group and Subscription?
+9) can you please explain Hub and Spoke Architecture?
+10)What is Platform Landing Zone?
+11)What are Azure Policies? Can you pls describe two Azure Policies?
+12)Ok, can you please Difference between Policy and RBAC?
+13)ok Ranjan, suppose you entered in our company and you got a chance to design a Azure landing Zone for our company ,then 
+How would you design Azure Landing Zone for our Company?
+14) How do you automate Landing Zone?
+15)Did you work on terraform, why we use terraform?
+16How do you organize a production Terraform repository?
+[7/27, 4:35 PM] Ashish - DevOpsInsiders: Linux & Networking
+
+1. Explain the complete request flow from a browser to a Kubernetes pod.
+2. Difference between TCP and UDP. Where have you used each?
+3. How does DNS resolution work internally?
+4. How would you debug high CPU, memory, or disk utilization on a Linux server?
+5. Explain Load Balancer, Reverse Proxy, and Ingress with real examples.
+• Docker & Kubernetes
+1. What happens internally when you run docker run?
+2. Difference between CMD and ENTRYPOINT.
+3. Why is a pod stuck in CrashLoopBackOff? How would you debug it?
+4. Difference between Deployment, StatefulSet, DaemonSet, and Job.
+5. Readiness Probe vs Liveness Probe.
+6. Kubernetes pods are Running but users receive 503 errors. What will you check?
+7. How does Kubernetes Service Discovery work?
+8. Explain ConfigMaps and Secrets. How do you manage them across environments?
+
+CI/CD
+
+1. Explain your CI/CD pipeline from code commit to production.
+2. How do you implement zero-downtime deployments?
+3. How would you optimize a pipeline that takes 25 minutes to complete?
+4. How do you implement rollback if deployment fails?
+5. How do you manage secrets securely in CI/CD pipelines?
+
+• Terraform & Cloud
+
+1. How does Terraform state locking work?
+2. Difference between count and for_each.
+3. How do you migrate Terraform state without recreating resources?
+4. What is Terraform Drift? How do you detect it?
+5. Explain your Terraform module structure for multiple environments.
+6. Difference between IAM Roles and IAM Policies.
+7. Explain VPC, Subnets, NAT Gateway, and Internet Gateway.
+
+• Monitoring &Troubleshooting
+• ⁠
+1. Difference between logs, metrics, and traces.
+2. How do you investigate a sudden spike in application latency?
+3. Explain your monitoring and alerting strategy.
+4. Walk me through a production issue you resolved.
+
+• Security & Production
+
+1. How do you secure container images before deployment?
+2. How do you implement RBAC in Kubernetes?
+3. How do you manage secrets in production?
+4. How would you design a disaster recovery strategy?
+5. How do you reduce cloud costs without affecting availability?
+6. Explain one challenging production incident and how you resolved it.
+[7/27, 4:35 PM] Ashish - DevOpsInsiders: Pranam Sir ,today interview questions  with Impressico business solution 
+*Project & Architecture*
+Tell me about your last project.
+What was the project architecture?
+What were your responsibilities in that project?
+What was the business requirement of the project?
+How is the data from satellites sent to your system?
+Is this application deployed in production?
+How is the application deployed?
+What Azure services are used to deploy this application?
+Which Azure resources are you responsible for?
+*CI/CD & Terraform*
+Explain your CI/CD pipeline.
+What stages are there in your Azure DevOps pipeline?
+What validations and scanning tools do you use before deployment?
+How do you promote code from Dev → QA → Production?
+How is approval handled before production deployment?
+Are you following a modular Terraform approach?
+*Azure Infrastructure*
+Which Azure services are you creating through Terraform?
+Are you using Virtual Machine Scale Sets (VMSS)?
+How did you create the Azure Virtual Network?
+What components are created inside a VNet?
+What CIDR/IP range are you using for your VNet?
+Why did you create separate frontend and backend subnets?
+Load Balancer & VMSS
+Why are you using Azure Load Balancer?
+How does Azure Load Balancer distribute traffic?
+How many virtual machines are there?
+Are all VMs part of one VMSS or multiple VMSS?
+Why are you using multiple VM Scale Sets?
+What workloads are running on each VMSS?
+*Monitoring*
+Which monitoring tools are you using?
+What dashboards are you monitoring?
+How are you monitoring application health?
+*Azure Landing Zone*
+Explain your Azure Landing Zone.
+What is a Management Group (MG)?
+Why are you using Management Groups?
+Why separate subscriptions for Dev, QA/UAT and Production?
+What is the purpose of Resource Groups?
+What is the purpose of Azure Subscriptions?
+Why do organizations implement Azure Landing Zones?
+*Security*
+What security measures are you taking?
+Which security scanning tools are used in your pipeline?
+What do SAST and DAST mean?
+Are SAST and DAST software or methodologies?
+*Disaster Recovery*
+What is your Disaster Recovery strategy?
+Why Active-Passive instead of Active-Active?
+How do you synchronize the DR environment?
+How do you synchronize the database in Active-Passive DR?
+Explain RTO and RPO.
+*Production Issues*
+What is the most challenging production issue you have faced?
+Explain the issue in detail.
+How did you troubleshoot it?
+How did you identify the root cause?
+How did you perform the rollback?
+What was your rollback strategy?
+Explain how rollback works internally in your CI/CD pipeline.
+How does the pipeline identify the previous working version?
+How does the pipeline redeploy the old build?
+[7/27, 4:35 PM] Ashish - DevOpsInsiders: Question from NAB & Quess Interview Today
+1. How would you design a production-grade CI/CD pipeline from scratch?
+2. How would you design a CI/CD pipeline for deploying applications to a multi-region AKS/EKS cluster?
+3. How would you ensure that deployment to the next region only happens if deployment and validation succeed in the previous region?
+4. How would you implement automated deployment promotion between regions?
+5. What is synthetic testing, and how would you integrate it into a CI/CD pipeline?
+6. What stages would you include in a production-grade CI/CD pipeline from code checkout to deployment notification?
+7. How would you automate deployment validation and rollback?
+8. How would you authenticate your CI/CD pipeline with Azure or AWS?
+9. How does authentication work between the Version Control System and the Cloud?
+10. When would you use Managed Identity instead of a Service Principal?
+11. What deployment strategies are available in Kubernetes?
+12. Explain Rolling Update, Canary, and Blue-Green deployment strategies. What are the differences, and which one is the most cost-effective?
+13. What security controls would you include in a banking application's CI/CD pipeline?
+14. How would you secure secrets in your CI/CD pipeline?
+15. How would you integrate Azure Key Vault into a CI/CD pipeline?
+16. How would you prevent hardcoded secrets in your applications?
+17. How would you implement RBAC in your CI/CD process?
+18. Where would you integrate SonarQube in the pipeline?
+19. How would Private Endpoints improve pipeline security?
+20. How would you secure communication between Azure Bastion and a Production VM?
+21. What security configurations would you implement for Bastion access?
+22. Why should Production VMs not have Public IP addresses?
+23. How would you secure communication between a Bastion Host and a Production Server?
+24. What networking security measures would you implement for Production workloads?
+25. How would you migrate existing ClickOps infrastructure to Infrastructure as Code using Terraform?
+26. How would you migrate infrastructure across multiple AWS/Azure accounts using Terraform?
+27. How would you design reusable Terraform modules for a large enterprise?
+28. Explain your Terraform module architecture, including Root Modules and Child Modules.
+29. How would you import existing cloud resources into Terraform? What is the purpose of the Terraform Import Block?
+30. How would you perform infrastructure migration with minimal downtime?
+31. What is Terraform State Locking, and how would you unlock a locked Terraform state?
+32. How would you resolve a locked Terraform state when using Terraform Enterprise without Terraform installed locally?
+33. How is Terraform state managed in Terraform Enterprise?
+34. How would you design an observability solution for a production application?
+35. What dashboards would you create for monitoring a production workload?
+36. Suppose 30% of requests are timing out, 30% have high latency, and the rest are successful. What dashboards and alerts would you configure?
+37. How would you design an alerting strategy for production systems?
+38. How would you implement threshold-based monitoring and alerting?
+39. What key metrics (KPIs) would you include in your monitoring dashboards?
+40. What would you include in a Latency Dashboard?
+41. What would you include in an Error Dashboard?
+42. What is latency in distributed systems?
+43. Explain P50, P95, and P99 latency. What are the differences, and when would you use each?
+44. How would you approach migrating workloads from AWS to Azure?
+45. How would you manage a multi-cloud environment (AWS, Azure, and GCP)?
+46. How would you design a secure cloud architecture for a banking application?
+47. How would you design a highly available, production-grade CI/CD pipeline for a banking application?
+48. How would you achieve zero-downtime deployments?
+49. How would you verify that an application deployment is successful from both a system and an end-user perspective?
+50. How would you ensure secure communication between users, Bastion Hosts, and Production Servers?
+51. How would you standardize Terraform code across 20+ cloud accounts?
+52. How would you monitor application health and automatically notify the operations team when thresholds are breached?
+[7/27, 4:35 PM] Ashish - DevOpsInsiders: Question from NAB & Quess Interview Today
+1. How would you design a production-grade CI/CD pipeline from scratch?
+2. How would you design a CI/CD pipeline for deploying applications to a multi-region AKS/EKS cluster?
+3. How would you ensure that deployment to the next region only happens if deployment and validation succeed in the previous region?
+4. How would you implement automated deployment promotion between regions?
+5. What is synthetic testing, and how would you integrate it into a CI/CD pipeline?
+6. What stages would you include in a production-grade CI/CD pipeline from code checkout to deployment notification?
+7. How would you automate deployment validation and rollback?
+8. How would you authenticate your CI/CD pipeline with Azure or AWS?
+9. How does authentication work between the Version Control System and the Cloud?
+10. When would you use Managed Identity instead of a Service Principal?
+11. What deployment strategies are available in Kubernetes?
+12. Explain Rolling Update, Canary, and Blue-Green deployment strategies. What are the differences, and which one is the most cost-effective?
+13. What security controls would you include in a banking application's CI/CD pipeline?
+14. How would you secure secrets in your CI/CD pipeline?
+15. How would you integrate Azure Key Vault into a CI/CD pipeline?
+16. How would you prevent hardcoded secrets in your applications?
+17. How would you implement RBAC in your CI/CD process?
+18. Where would you integrate SonarQube in the pipeline?
+19. How would Private Endpoints improve pipeline security?
+20. How would you secure communication between Azure Bastion and a Production VM?
+21. What security configurations would you implement for Bastion access?
+22. Why should Production VMs not have Public IP addresses?
+23. How would you secure communication between a Bastion Host and a Production Server?
+24. What networking security measures would you implement for Production workloads?
+25. How would you migrate existing ClickOps infrastructure to Infrastructure as Code using Terraform?
+26. How would you migrate infrastructure across multiple AWS/Azure accounts using Terraform?
+27. How would you design reusable Terraform modules for a large enterprise?
+28. Explain your Terraform module architecture, including Root Modules and Child Modules.
+29. How would you import existing cloud resources into Terraform? What is the purpose of the Terraform Import Block?
+30. How would you perform infrastructure migration with minimal downtime?
+31. What is Terraform State Locking, and how would you unlock a locked Terraform state?
+32. How would you resolve a locked Terraform state when using Terraform Enterprise without Terraform installed locally?
+33. How is Terraform state managed in Terraform Enterprise?
+34. How would you design an observability solution for a production application?
+35. What dashboards would you create for monitoring a production workload?
+36. Suppose 30% of requests are timing out, 30% have high latency, and the rest are successful. What dashboards and alerts would you configure?
+37. How would you design an alerting strategy for production systems?
+38. How would you implement threshold-based monitoring and alerting?
+39. What key metrics (KPIs) would you include in your monitoring dashboards?
+40. What would you include in a Latency Dashboard?
+41. What would you include in an Error Dashboard?
+42. What is latency in distributed systems?
+43. Explain P50, P95, and P99 latency. What are the differences, and when would you use each?
+44. How would you approach migrating workloads from AWS to Azure?
+45. How would you manage a multi-cloud environment (AWS, Azure, and GCP)?
+46. How would you design a secure cloud architecture for a banking application?
+47. How would you design a highly available, production-grade CI/CD pipeline for a banking application?
+48. How would you achieve zero-downtime deployments?
+49. How would you verify that an application deployment is successful from both a system and an end-user perspective?
+50. How would you ensure secure communication between users, Bastion Hosts, and Production Servers?
+51. How would you standardize Terraform code across 20+ cloud accounts?
+52. How would you monitor application health and automatically notify the operations team when thresholds are breached?
+[7/27, 4:35 PM] Ashish - DevOpsInsiders: [5/28, 5:40 PM] ashu000677: 1.⁠ ⁠Introduce your self
+ 2.⁠ ⁠Statefile management
+ 3.⁠ ⁠Move block
+ 4.⁠ ⁠Difference between variable.tf and variables.tf  tfvars files
+ 5.⁠ ⁠Implicit and explicit
+ 6.⁠ ⁠Locking mechanism
+ 7.⁠ ⁠Pattern module
+ 8.⁠ ⁠Type Constraints in Terraform.?
+ 9.⁠ ⁠When Will the State File Be Created?
+10.⁠ ⁠What is linting? - TFLint
+11.⁠ ⁠Git push and git commit.
+12.⁠ ⁠Process for PR. (Pull request)
+13.⁠ ⁠Deployment group and task group
+14.⁠ ⁠Service connection
+15.⁠ ⁠Security best practices of pipeline
+
+
+ 1.⁠ ⁠What is linter
+ 2.⁠ ⁠what is provisioner
+ 3.⁠ ⁠what is dependances in terraform
+ 4.⁠ ⁠what is modules
+ 5.⁠ ⁠what is service connection
+ 6.⁠ ⁠what is sprint.
+ 7.⁠ ⁠what is work item
+ 8.⁠ ⁠difference between sprint and work item
+ 9.⁠ ⁠difference between variable.tf and terraform.tfvars
+10.⁠ ⁠how can we save sensitive data in state file
+
+
+10.⁠ ⁠What is the move block in Terraform? Can you provide an example?
+12.⁠ ⁠When integrating Snowflake with Azure DevOps to trigger a pipeline, which authentication method should you use?
+13.⁠ ⁠What methodology do you follow in Azure Boards? What is a sprint, and how does it differ from a work item?
+14.⁠ ⁠What is the difference between a push and a commit in version control systems?
+15.⁠ ⁠Have you worked with task groups in Azure DevOps?
+16.⁠ ⁠If you have a multi-stage pipeline in Azure DevOps and, upon execution, only one pipeline runs even though there are no dependencies between stages, how would you troubleshoot the issue?
+17.⁠ ⁠If you’ve written a Terraform configuration to deploy a virtual machine using a custom image, and you later update the software in that image, what will happen if you run terraform apply again?
+
+
+Linting
+Resource Module
+How to create 10 storage account in 10 subscription with single pipeline
+Provisioner 
+Statefile
+Service connection 
+
+
+round1:
+ 1.⁠ ⁠what dependency > implicit and explicit   share the syntax and chat
+ 2.⁠ ⁠what is move block in terraform
+ 3.⁠ ⁠what is state file and where we can store it
+ 4.⁠ ⁠when will state file create
+ 5.⁠ ⁠what is lock file. and why it is created
+ 6.⁠ ⁠what is difference between varible.tf and variables.tf
+ 7.⁠ ⁠what is terraform.tfvars
+ 8.⁠ ⁠what is service connection
+ 9.⁠ ⁠what are the thing required while creating service connection.
+10.⁠ ⁠what is basic in ADO
+11.⁠ ⁠what is stake holder in ADO
+12,.what are the security best practice in ADO
+
+round2:
+ 1.⁠ ⁠what dependency > implicit and explicit 
+ 2.⁠ ⁠how you will managed multiple subscription
+ 3.⁠ ⁠what is difference between vm and vmss
+4  there is requirement to create two vm and two databased which approach you will follow vm or vmss
+ 5.⁠ ⁠let suppose you have 1500 subscription then how will you managed it from ADO level
+ 6.⁠ ⁠let suppose are architect and you want to setup infra then what will your approve like you have to provide solution to customer
+
+
+** Second round HCL Interview  ***
+
+ 1.⁠ ⁠Give me a example of recently you may upgraded templates in terraform
+ 2.⁠ ⁠what are the data types are you familiar in terraform
+ 3.⁠ ⁠after which command state file will command
+ 4.⁠ ⁠what is stage terraform download module and providers
+ 5.⁠ ⁠what are backends you familiar with
+ 6.⁠ ⁠how do you encrypt the state file
+ 7.⁠ ⁠you are creating variable in terraform and you need to provide it's default value. what argument will you declare provide the default value
+ 8.⁠ ⁠I have a vm that created through terraform and install the Microsoft office after create vm. and now i run command terraform apply again. what will happen. Microsoft office will remove or will be there
+ 9.⁠ ⁠what are lifecycle rules in terraform. which are declared within resource block in terraform
+10.⁠ ⁠what is dependances in terraform
+11.⁠ ⁠what are the gates in azure devops
+12.⁠ ⁠is macOS supported as agent pool 
+13.⁠ ⁠in azure what is availability set
+
+
+Qus .. Interviwer name shivam
+
+What is linter in terraform
+
+What is task group 
+
+What is deployment group
+
+What is ADO 
+
+What is sprint and work item 
+
+How you can secure ado 
+
+What is variable.tf and terraform.tf vars
+
+What is output block and how you will pass this into pipeline 
+
+If I have a terraform code till vm or I applied terraform plan and apply but I what vm result in json format , what will be the command for it , tell me the command only
+
+
+1> which tools used for pipeline 
+2> provisoners in terraform 
+3> if ypu mark a varibale as sensative in terraform , if while doing tef state so how you will see this variable ....?
+4> 2nd if you passes the value hardcoded in vm so it will show in plan or not 
+5- what is move block?
+6> is it will imapct our current infra structure or not ?
+
+
+What is pipeline or which pipeline u worked on like yaml plz expaln E2E flow 
+
+What's is stateless and statefull in k8
+
+If any pod is in pending state so how u will trouble shoot and identify 
+
+You know about docker
+
+Can you explain where we are keeping our docker image 
+
+What is statefile and where we will keep it 
+
+What is volume in docker 
+
+Have u worked on any scripting like bash and powrshell
+** Second round HCL Interview  ***
+
+ 1.⁠ ⁠Give me a example of recently you may upgraded templates in terraform
+ 2.⁠ ⁠what are the data types are you familiar in terraform.
+ 3.⁠ ⁠after which command state file will create.
+ 4.⁠ ⁠what is stage terraform download module and providers
+ 5.⁠ ⁠what are backends you familiar with
+ 6.⁠ ⁠how do you encrypt the state file
+ 7.⁠ ⁠you are creating variable in terraform and you need to provide it's default value. what argument will you declare provide the default value
+ 8.⁠ ⁠I have a vm that created through terraform and install the Microsoft office after create vm. and now i run command terraform apply again. what will happen. Microsoft office will remove or will be there
+ 9.⁠ ⁠what are lifecycle rules in terraform. which are declared within resource block in terraform
+10.⁠ ⁠what is dependances in terraform
+11.⁠ ⁠what are the gates in azure devops
+12.⁠ ⁠is macOS supported as agent pool 
+13.⁠ ⁠in azure what is availability set
+[12/5, 5:03 PM] Ms Yadav: 1st round HCL question...1.what is module?
+2.what is provisioners?
+3.what is null resource?
+4.what is statefile?
+5.what is state locking in terraform?
+6.what is variable?
+7.write a code with the help of module and for_each?
+8.what is providers and write a code?
+9.how is the process to setup the terraform??
+10.what is file provisioners?
+11.what is data variable?
+[12/5, 5:03 PM] Ms Yadav: 1. What is linter
+ 2.⁠ ⁠what is provisioner
+ 3.⁠ ⁠what is dependances in terraform
+ 4.⁠ ⁠what is modules
+ 5.⁠ ⁠what is service connection
+ 6.⁠ ⁠what is splinter
+ 7.⁠ ⁠what is work item
+ 8.⁠ ⁠difference between splinter and work item
+ 9.⁠ ⁠difference between variable.tf and terraform.tfvars
+10.⁠ ⁠how can we save sensitive data in state file
+[12/5, 5:03 PM] Ms Yadav: 1> which tools used for pipeline 
+2> provisoners in terraform 
+3> if ypu mark a varibale as sensative in terraform , if while doing tef state so how you will see this variable ....?
+4> 2nd if you passes the value hardcoded in vm so it will show in plan or not 
+5- what is move block?
+6> is it will imapct our current infra structure or not ?
+[12/5, 5:03 PM] Ms Yadav: 1. Give me a example of recently you may upgraded templates in terraform
+ 2.⁠ ⁠what are the data types are you familiar in terraform
+ 3.⁠ ⁠after which command state file will command
+ 4.⁠ ⁠what is stage terraform download module and providers
+ 5.⁠ ⁠what are backends you familiar with
+ 6.⁠ ⁠how do you encrypt the state file
+ 7.⁠ ⁠you are creating variable in terraform and you need to provide it's default value. what argument will you declare provide the default value
+ 8.⁠ ⁠I have a vm that created through terraform and install the Microsoft office after create vm. and now i run command terraform apply again. what will happen. Microsoft office will remove or will be there
+ 9.⁠ ⁠what are lifecycle rules in terraform. which are declared within resource block in terraform
+10.⁠ ⁠what is dependances in terraform
+11.⁠ ⁠what are the gates in azure devops
+12.⁠ ⁠is macOS supported as agent pool 
+13.⁠ ⁠in azure what is availability set
+
+
+[12/5, 6:31 PM] Anu DevOps G16: 
+
+What is pipeline or which pipeline u worked on like yaml plz expaln E2E flow 
+
+What's is stateless and statefull in k8
+
+If any pod is in pending state so how u will trouble shoot and identify 
+
+You know about docker
+
+Can you explain where we are keeping our docker image 
+
+What is state file and where we will keep it 
+
+What is volume in docker 
+
+Have u worked on any scripting like bash and powrshell
+[12/5, 6:31 PM] Anu DevOps G16: ** Second round HCL Interview  ***
+
+ 1.⁠ ⁠Give me a example of recently you may upgraded templates in terraform
+ 2.⁠ ⁠what are the data types are you familiar in terraform
+ 3.⁠ ⁠after which command state file will command
+ 4.⁠ ⁠what is stage terraform download module and providers
+ 5.⁠ ⁠what are backends you familiar with
+ 6.⁠ ⁠how do you encrypt the state file
+ 7.⁠ ⁠you are creating variable in terraform and you need to provide it's default value. what argument will you declare provide the default value
+ 8.⁠ ⁠I have a vm that created through terraform and install the Microsoft office after create vm. and now i run command terraform apply again. what will happen. Microsoft office will remove or will be there
+ 9.⁠ ⁠what are lifecycle rules in terraform. which are declared within resource block in terraform
+10.⁠ ⁠what is dependences in terraform
+11.⁠ ⁠what are the gates in azure devops
+12.⁠ ⁠is macOS supported as agent pool 
+13.⁠ ⁠in azure what is availability set
+[12/5, 6:32 PM] Anu DevOps G16: 1> which tools used for pipeline 
+2> provisioners in terraform 
+3> if you mark a variable as sensitive in terraform , if while doing tef state so how you will see this variable ....?
+4> 2nd if you passes the value hardcoded in vm so it will show in plan or not 
+5- what is move block?
+6> is it will impact our current infra structure or not ?
+ 1.⁠ ⁠Give me a example of recently you may upgraded templates in terraform
+ 2.⁠ ⁠what are the data types are you familiar in terraform
+ 3.⁠ ⁠after which command state file will command
+ 4.⁠ ⁠what is stage terraform download module and providers
+ 5.⁠ ⁠what are backends you familiar with
+ 6.⁠ ⁠how do you encrypt the state file
+ 7.⁠ ⁠you are creating variable in terraform and you need to provide it's default value. what argument will you declare provide the default value
+ 8.⁠ ⁠I have a vm that created through terraform and install the Microsoft office after create vm. and now i run command terraform apply again. what will happen. Microsoft office will remove or will be there
+ 9.⁠ ⁠what are lifecycle rules in terraform. which are declared within resource block in terraform
+10.⁠ ⁠what is dependences in terraform
+11.⁠ ⁠what are the gates in azure devops
+12.⁠ ⁠is macOS supported as agent pool 
+13.⁠ ⁠in azure what is availability set
+[12/5, 6:32 PM] Anu DevOps G16: 1st round HCL question...1.what is module?
+2.what is provisioners?
+3.what is null resource?
+4.what is state-file?
+5.what is state locking in terraform?
+6.what is variable?
+7.write a code with the help of module and for_each?
+8.what is providers and write a code?
+9.how is the process to setup the terraform??
+10.what is file provisioners?
+11.what is data variable?
+[12/5, 6:32 PM] Anu DevOps G16: 1> which tools used for pipeline 
+2> provisioners in terraform 
+3> if ypu mark a variable as sensitive in terraform , if while doing tef state so how you will see this variable ....?
+4> 2nd if you passes the value hardcoded in vm so it will show in plan or not 
+5- what is move block?
+6> is it will impact our current infra structure or not ?
+
+
+
+
+1 what is data block In Terraform
+2.if you are creating data block it will be part of state file ?
+ 3.⁠ ⁠What are data type in Terraform 
+ 4.⁠ ⁠I need to create 10 storage account what type of data type should you used.
+ 5.⁠ ⁠Diff b/w for each and count.
+ 6.⁠ ⁠is count only work on integers ?, why deleting in count is difficult
+ 7.⁠ ⁠What is life cycle block give 2-3 argument,can it work on storage account scenario?
+8 What is diff b/w root and child module
+ 9.⁠ ⁠Resource and pattern module
+10.⁠ ⁠implicit and explicit dependencies
+11.⁠ ⁠what are logging level supported by Terraform
+12.⁠ ⁠Terraform show
+13.⁠ ⁠Terraform fmt
+14.⁠ ⁠Terraform provisioners
+15.⁠ ⁠I have a virtual machine template,I have also power shell script which joins the vm to domain after has been built, which provisioner should I used to ensure when I am running template vm is built and joins to domain.
+16.⁠ ⁠Have you worked on power shell
+17.⁠ ⁠you are work in on team and one of your team member by mistake expose the password in Terraform template and checked it in repository, you changed the password from target resource ,how ever, how will you ensure that password is removed from repo.
+18.⁠ ⁠Terraform workspace and why we used it.
+[12/7, 4:39 PM] +91 84392 50746: Second round question hcl 
+Q1. I want to manage a set of PVs say in ns "lab" using a SA "testsa".
+Q2. Cluster roll binding ?
+Q3. can you write is Yaml File and explain?
+Q4.terraform function ?
+Q5.how to maintain Kubernetes cluster ?
+Q6.what is the deployment gate in ADO?
+Q7.what is pool ?
+Q8. What is peering ?
+Q.9 difference between provider and provisioners ?
+Q10.how to upgrade kubernets cluster?
+
+
+2nd Round-
+1 what is deta block In Terraform
+2.if you are creating data block it will be part of state file ?
+ 3.⁠ ⁠What are data type in Terraform 
+ 4.⁠ ⁠I need to create 10 storage account what type of data type should you used.
+ 5.⁠ ⁠Diff b/w for each and count.
+ 6.⁠ ⁠is count only work on integers ?, why deleting in count is difficult
+ 7.⁠ ⁠What is life cycle block give 2-3 argument,can it work on storage account scenario?
+8 What is diff b/w root and child module
+ 9.⁠ ⁠Resource and pattern module
+10.⁠ ⁠implicit and explicit dependencies
+11.⁠ ⁠what are logging level supported by Terraform
+12.⁠ ⁠Terraform show
+13.⁠ ⁠Terraform fmt
+14.⁠ ⁠Terraform provisioners
+15.⁠ ⁠I have a virtual machine template,I have also power shell script which joins the vm to domain after has been built, which provisioner should I used to ensure when I am running template vm is built and joins to domain.
+16.⁠ ⁠Have you worked on power-shell
+17.⁠ ⁠you are working on team and one of your team member by mistake expose the password in Terraform template and checked it in repository, you changed the password from target resource ,how ever, how will you ensure that password is removed from repo.
+18.⁠ ⁠Terraform workspace and why we used it.
+
+
+new questions - terraform slug
+github - workflow and dispatch
+
+2nd round
+
+1- 	what is provisioners 
+2-	Service connections 
+3-	gates
+4-	Terraform dependencies 
+5-	Diff between count and for each
+6-	Diff between list and map
+7-	Power shell/ bash scripting idea - 
+8-	Git Hub Action Idea - working or not, basic question like event and syntax 
+9-	Micro services basics 
+10-	What is life cycle block
+11-  	if 2 team have same repo Access on ADO and how do you set for Auto PR raise when ever any 	changes done in the code.
+12-	How you can prevent a user in ADO from azure board , user can only access pipeline and repo 
+13 - 	Diff between Git fetch and git Pull
+14- 	How federation works in ADO (Ans- Service connection details)
+15-	Diff between pattern module and standard root child module 
+16- 	How we can stop all outgoing traffic from azure VM without NSG (Ans - by firewall and route table)
+17- 	Availability set and availability zone
+[5/28, 5:41 PM] ashu000677: 1.⁠ ⁠Introduce your self
+ 2.⁠ ⁠Statefile management
+ 3.⁠ ⁠Move block
+ 4.⁠ ⁠Difference between variable.tf and variables.tf  tfvars files
+ 5.⁠ ⁠Implicit and explicit
+ 6.⁠ ⁠Locking mechanism
+ 7.⁠ ⁠Pattern module
+ 8.⁠ ⁠Type Constraints in Terraform.?
+ 9.⁠ ⁠When Will the State File Be Created?
+10.⁠ ⁠What is linting? - TFLint
+11.⁠ ⁠Git push and git commit.
+12.⁠ ⁠Process for PR. (Pull request)
+13.⁠ ⁠Deployment group and task group
+14.⁠ ⁠Service connection
+15.⁠ ⁠Security best practices of pipeline
+
+
+ 1.⁠ ⁠What is linter
+ 2.⁠ ⁠what is provisioner
+ 3.⁠ ⁠what is dependances in terraform
+ 4.⁠ ⁠what is modules
+ 5.⁠ ⁠what is service connection
+ 6.⁠ ⁠what is sprint.
+ 7.⁠ ⁠what is work item
+ 8.⁠ ⁠difference between sprint and work item
+ 9.⁠ ⁠difference between variable.tf and terraform.tfvars
+10.⁠ ⁠how can we save sensitive data in state file
+
+
+10.⁠ ⁠What is the move block in Terraform? Can you provide an example?
+12.⁠ ⁠When integrating Snowflake with Azure DevOps to trigger a pipeline, which authentication method should you use?
+13.⁠ ⁠What methodology do you follow in Azure Boards? What is a sprint, and how does it differ from a work item?
+14.⁠ ⁠What is the difference between a push and a commit in version control systems?
+15.⁠ ⁠Have you worked with task groups in Azure DevOps?
+16.⁠ ⁠If you have a multi-stage pipeline in Azure DevOps and, upon execution, only one pipeline runs even though there are no dependencies between stages, how would you troubleshoot the issue?
+17.⁠ ⁠If you’ve written a Terraform configuration to deploy a virtual machine using a custom image, and you later update the software in that image, what will happen if you run terraform apply again?
+
+
+Linting
+Resource Module
+How to create 10 storage account in 10 subscription with single pipeline
+Provisioner 
+Statefile
+Service connection 
+
+
+round1:
+ 1.⁠ ⁠what dependency > implicit and explicit   share the syntax and chat
+ 2.⁠ ⁠what is move block in terraform
+ 3.⁠ ⁠what is state file and where we can store it
+ 4.⁠ ⁠when will state file create
+ 5.⁠ ⁠what is lock file. and why it is created
+ 6.⁠ ⁠what is difference between varible.tf and variables.tf
+ 7.⁠ ⁠what is terraform.tfvars
+ 8.⁠ ⁠what is service connection
+ 9.⁠ ⁠what are the thing required while creating service connection.
+10.⁠ ⁠what is basic in ADO
+11.⁠ ⁠what is stake holder in ADO
+12,.what are the security best practice in ADO
+
+round2:
+ 1.⁠ ⁠what dependency > implicit and explicit 
+ 2.⁠ ⁠how you will managed multiple subscription
+ 3.⁠ ⁠what is difference between vm and vmss
+4  there is requirement to create two vm and two databased which approach you will follow vm or vmss
+ 5.⁠ ⁠let suppose you have 1500 subscription then how will you managed it from ADO level
+ 6.⁠ ⁠let suppose are architect and you want to setup infra then what will your approve like you have to provide solution to customer
+
+
+** Second round HCL Interview  ***
+
+ 1.⁠ ⁠Give me a example of recently you may upgraded templates in terraform
+ 2.⁠ ⁠what are the data types are you familiar in terraform
+ 3.⁠ ⁠after which command state file will command
+ 4.⁠ ⁠what is stage terraform download module and providers
+ 5.⁠ ⁠what are backends you familiar with
+ 6.⁠ ⁠how do you encrypt the state file
+ 7.⁠ ⁠you are creating variable in terraform and you need to provide it's default value. what argument will you declare provide the default value
+ 8.⁠ ⁠I have a vm that created through terraform and install the Microsoft office after create vm. and now i run command terraform apply again. what will happen. Microsoft office will remove or will be there
+ 9.⁠ ⁠what are lifecycle rules in terraform. which are declared within resource block in terraform
+10.⁠ ⁠what is dependances in terraform
+11.⁠ ⁠what are the gates in azure devops
+12.⁠ ⁠is macOS supported as agent pool 
+13.⁠ ⁠in azure what is availability set
+
+
+Qus .. Interviwer name shivam
+
+What is linter in terraform
+
+What is task group 
+
+What is deployment group
+
+What is ADO 
+
+What is sprint and work item 
+
+How you can secure ado 
+
+What is variable.tf and terraform.tf vars
+
+What is output block and how you will pass this into pipeline 
+
+If I have a terraform code till vm or I applied terraform plan and apply but I what vm result in json format , what will be the command for it , tell me the command only
+
+
+1> which tools used for pipeline 
+2> provisoners in terraform 
+3> if ypu mark a varibale as sensative in terraform , if while doing tef state so how you will see this variable ....?
+4> 2nd if you passes the value hardcoded in vm so it will show in plan or not 
+5- what is move block?
+6> is it will imapct our current infra structure or not ?
+
+
+What is pipeline or which pipeline u worked on like yaml plz expaln E2E flow 
+
+What's is stateless and statefull in k8
+
+If any pod is in pending state so how u will trouble shoot and identify 
+
+You know about docker
+
+Can you explain where we are keeping our docker image 
+
+What is statefile and where we will keep it 
+
+What is volume in docker 
+
+Have u worked on any scripting like bash and powrshell
+** Second round HCL Interview  ***
+
+ 1.⁠ ⁠Give me a example of recently you may upgraded templates in terraform
+ 2.⁠ ⁠what are the data types are you familiar in terraform.
+ 3.⁠ ⁠after which command state file will create.
+ 4.⁠ ⁠what is stage terraform download module and providers
+ 5.⁠ ⁠what are backends you familiar with
+ 6.⁠ ⁠how do you encrypt the state file
+ 7.⁠ ⁠you are creating variable in terraform and you need to provide it's default value. what argument will you declare provide the default value
+ 8.⁠ ⁠I have a vm that created through terraform and install the Microsoft office after create vm. and now i run command terraform apply again. what will happen. Microsoft office will remove or will be there
+ 9.⁠ ⁠what are lifecycle rules in terraform. which are declared within resource block in terraform
+10.⁠ ⁠what is dependances in terraform
+11.⁠ ⁠what are the gates in azure devops
+12.⁠ ⁠is macOS supported as agent pool 
+13.⁠ ⁠in azure what is availability set
+[12/5, 5:03 PM] Ms Yadav: 1st round HCL question...1.what is module?
+2.what is provisioners?
+3.what is null resource?
+4.what is statefile?
+5.what is state locking in terraform?
+6.what is variable?
+7.write a code with the help of module and for_each?
+8.what is providers and write a code?
+9.how is the process to setup the terraform??
+10.what is file provisioners?
+11.what is data variable?
+[12/5, 5:03 PM] Ms Yadav: 1. What is linter
+ 2.⁠ ⁠what is provisioner
+ 3.⁠ ⁠what is dependances in terraform
+ 4.⁠ ⁠what is modules
+ 5.⁠ ⁠what is service connection
+ 6.⁠ ⁠what is splinter
+ 7.⁠ ⁠what is work item
+ 8.⁠ ⁠difference between splinter and work item
+ 9.⁠ ⁠difference between variable.tf and terraform.tfvars
+10.⁠ ⁠how can we save sensitive data in state file
+[12/5, 5:03 PM] Ms Yadav: 1> which tools used for pipeline 
+2> provisoners in terraform 
+3> if ypu mark a varibale as sensative in terraform , if while doing tef state so how you will see this variable ....?
+4> 2nd if you passes the value hardcoded in vm so it will show in plan or not 
+5- what is move block?
+6> is it will imapct our current infra structure or not ?
+[12/5, 5:03 PM] Ms Yadav: 1. Give me a example of recently you may upgraded templates in terraform
+ 2.⁠ ⁠what are the data types are you familiar in terraform
+ 3.⁠ ⁠after which command state file will command
+ 4.⁠ ⁠what is stage terraform download module and providers
+ 5.⁠ ⁠what are backends you familiar with
+ 6.⁠ ⁠how do you encrypt the state file
+ 7.⁠ ⁠you are creating variable in terraform and you need to provide it's default value. what argument will you declare provide the default value
+ 8.⁠ ⁠I have a vm that created through terraform and install the Microsoft office after create vm. and now i run command terraform apply again. what will happen. Microsoft office will remove or will be there
+ 9.⁠ ⁠what are lifecycle rules in terraform. which are declared within resource block in terraform
+10.⁠ ⁠what is dependances in terraform
+11.⁠ ⁠what are the gates in azure devops
+12.⁠ ⁠is macOS supported as agent pool 
+13.⁠ ⁠in azure what is availability set
+
+
+[12/5, 6:31 PM] Anu DevOps G16: 
+
+What is pipeline or which pipeline u worked on like yaml plz expaln E2E flow 
+
+What's is stateless and statefull in k8
+
+If any pod is in pending state so how u will trouble shoot and identify 
+
+You know about docker
+
+Can you explain where we are keeping our docker image 
+
+What is state file and where we will keep it 
+
+What is volume in docker 
+
+Have u worked on any scripting like bash and powrshell
+[12/5, 6:31 PM] Anu DevOps G16: ** Second round HCL Interview  ***
+
+ 1.⁠ ⁠Give me a example of recently you may upgraded templates in terraform
+ 2.⁠ ⁠what are the data types are you familiar in terraform
+ 3.⁠ ⁠after which command state file will command
+ 4.⁠ ⁠what is stage terraform download module and providers
+ 5.⁠ ⁠what are backends you familiar with
+ 6.⁠ ⁠how do you encrypt the state file
+ 7.⁠ ⁠you are creating variable in terraform and you need to provide it's default value. what argument will you declare provide the default value
+ 8.⁠ ⁠I have a vm that created through terraform and install the Microsoft office after create vm. and now i run command terraform apply again. what will happen. Microsoft office will remove or will be there
+ 9.⁠ ⁠what are lifecycle rules in terraform. which are declared within resource block in terraform
+10.⁠ ⁠what is dependences in terraform
+11.⁠ ⁠what are the gates in azure devops
+12.⁠ ⁠is macOS supported as agent pool 
+13.⁠ ⁠in azure what is availability set
+[12/5, 6:32 PM] Anu DevOps G16: 1> which tools used for pipeline 
+2> provisioners in terraform 
+3> if you mark a variable as sensitive in terraform , if while doing tef state so how you will see this variable ....?
+4> 2nd if you passes the value hardcoded in vm so it will show in plan or not 
+5- what is move block?
+6> is it will impact our current infra structure or not ?
+ 1.⁠ ⁠Give me a example of recently you may upgraded templates in terraform
+ 2.⁠ ⁠what are the data types are you familiar in terraform
+ 3.⁠ ⁠after which command state file will command
+ 4.⁠ ⁠what is stage terraform download module and providers
+ 5.⁠ ⁠what are backends you familiar with
+ 6.⁠ ⁠how do you encrypt the state file
+ 7.⁠ ⁠you are creating variable in terraform and you need to provide it's default value. what argument will you declare provide the default value
+ 8.⁠ ⁠I have a vm that created through terraform and install the Microsoft office after create vm. and now i run command terraform apply again. what will happen. Microsoft office will remove or will be there
+ 9.⁠ ⁠what are lifecycle rules in terraform. which are declared within resource block in terraform
+10.⁠ ⁠what is dependences in terraform
+11.⁠ ⁠what are the gates in azure devops
+12.⁠ ⁠is macOS supported as agent pool 
+13.⁠ ⁠in azure what is availability set
+[12/5, 6:32 PM] Anu DevOps G16: 1st round HCL question...1.what is module?
+2.what is provisioners?
+3.what is null resource?
+4.what is state-file?
+5.what is state locking in terraform?
+6.what is variable?
+7.write a code with the help of module and for_each?
+8.what is providers and write a code?
+9.how is the process to setup the terraform??
+10.what is file provisioners?
+11.what is data variable?
+[12/5, 6:32 PM] Anu DevOps G16: 1> which tools used for pipeline 
+2> provisioners in terraform 
+3> if ypu mark a variable as sensitive in terraform , if while doing tef state so how you will see this variable ....?
+4> 2nd if you passes the value hardcoded in vm so it will show in plan or not 
+5- what is move block?
+6> is it will impact our current infra structure or not ?
+
+
+
+
+1 what is data block In Terraform
+2.if you are creating data block it will be part of state file ?
+ 3.⁠ ⁠What are data type in Terraform 
+ 4.⁠ ⁠I need to create 10 storage account what type of data type should you used.
+ 5.⁠ ⁠Diff b/w for each and count.
+ 6.⁠ ⁠is count only work on integers ?, why deleting in count is difficult
+ 7.⁠ ⁠What is life cycle block give 2-3 argument,can it work on storage account scenario?
+8 What is diff b/w root and child module
+ 9.⁠ ⁠Resource and pattern module
+10.⁠ ⁠implicit and explicit dependencies
+11.⁠ ⁠what are logging level supported by Terraform
+12.⁠ ⁠Terraform show
+13.⁠ ⁠Terraform fmt
+14.⁠ ⁠Terraform provisioners
+15.⁠ ⁠I have a virtual machine template,I have also power shell script which joins the vm to domain after has been built, which provisioner should I used to ensure when I am running template vm is built and joins to domain.
+16.⁠ ⁠Have you worked on power shell
+17.⁠ ⁠you are work in on team and one of your team member by mistake expose the password in Terraform template and checked it in repository, you changed the password from target resource ,how ever, how will you ensure that password is removed from repo.
+18.⁠ ⁠Terraform workspace and why we used it.
+[12/7, 4:39 PM] +91 84392 50746: Second round question hcl 
+Q1. I want to manage a set of PVs say in ns "lab" using a SA "testsa".
+Q2. Cluster roll binding ?
+Q3. can you write is Yaml File and explain?
+Q4.terraform function ?
+Q5.how to maintain Kubernetes cluster ?
+Q6.what is the deployment gate in ADO?
+Q7.what is pool ?
+Q8. What is peering ?
+Q.9 difference between provider and provisioners ?
+Q10.how to upgrade kubernets cluster?
+
+
+2nd Round-
+1 what is deta block In Terraform
+2.if you are creating data block it will be part of state file ?
+ 3.⁠ ⁠What are data type in Terraform 
+ 4.⁠ ⁠I need to create 10 storage account what type of data type should you used.
+ 5.⁠ ⁠Diff b/w for each and count.
+ 6.⁠ ⁠is count only work on integers ?, why deleting in count is difficult
+ 7.⁠ ⁠What is life cycle block give 2-3 argument,can it work on storage account scenario?
+8 What is diff b/w root and child module
+ 9.⁠ ⁠Resource and pattern module
+10.⁠ ⁠implicit and explicit dependencies
+11.⁠ ⁠what are logging level supported by Terraform
+12.⁠ ⁠Terraform show
+13.⁠ ⁠Terraform fmt
+14.⁠ ⁠Terraform provisioners
+15.⁠ ⁠I have a virtual machine template,I have also power shell script which joins the vm to domain after has been built, which provisioner should I used to ensure when I am running template vm is built and joins to domain.
+16.⁠ ⁠Have you worked on power-shell
+17.⁠ ⁠you are working on team and one of your team member by mistake expose the password in Terraform template and checked it in repository, you changed the password from target resource ,how ever, how will you ensure that password is removed from repo.
+18.⁠ ⁠Terraform workspace and why we used it.
+
+
+new questions - terraform slug
+github - workflow and dispatch
+
+2nd round
+
+1- 	what is provisioners 
+2-	Service connections 
+3-	gates
+4-	Terraform dependencies 
+5-	Diff between count and for each
+6-	Diff between list and map
+7-	Power shell/ bash scripting idea - 
+8-	Git Hub Action Idea - working or not, basic question like event and syntax 
+9-	Micro services basics 
+10-	What is life cycle block
+11-  	if 2 team have same repo Access on ADO and how do you set for Auto PR raise when ever any 	changes done in the code.
+12-	How you can prevent a user in ADO from azure board , user can only access pipeline and repo 
+13 - 	Diff between Git fetch and git Pull
+14- 	How federation works in ADO (Ans- Service connection details)
+15-	Diff between pattern module and standard root child module 
+16- 	How we can stop all outgoing traffic from azure VM without NSG (Ans - by firewall and route table)
+17- 	Availability set and availability zone
+[7/27, 4:35 PM] Ashish - DevOpsInsiders: Cognizant 2nd round 14 July
+
+
+1. What are your day-to-day responsibilities in your current project?
+2. Which CI/CD tool do you use?
+3. Have you created custom Terraform modules or built infrastructure from scratch?
+4. How do you design reusable Terraform modules for multiple environments (Dev, UAT, Prod), and how can a single module be reused across all environments?
+5. What are Terraform Workspaces, why are they used, what are their benefits, and when would you use them instead of separate environment folders?
+6. How would you plan and execute a Terraform version upgrade (e.g., from 0.x to 1.x), and what compatibility checks would you perform before upgrading?
+7. What is the purpose of `null_resource` in Terraform, and can you give a practical use case?
+8. What is a Terraform `data` block, and how do you use it to reference existing Azure resources in your code?
+9. If one VM becomes corrupted after deployment, how would you redeploy only that VM using Terraform?
+10. If the Terraform state file gets corrupted, how would you recover it, and what are the best practices to protect the state file?
+11. How do you securely manage sensitive information such as passwords, keys, and certificates in Terraform, and how do you integrate Azure Key Vault?
+12. How would you import existing Azure resources into Terraform so they can be managed as Infrastructure as Code?
+13. What is Terraform Drift, and how do you detect and safely handle manual changes made through the Azure Portal before running `terraform plan` and `terraform apply`?
+14. Have you worked with Azure Verified Modules (AVM) or Cloud Adoption Framework (CAF) Terraform modules?
+15. How do you structure your Terraform projects using root and child modules, and do you build your own modules or reuse existing ones?
+16. How do you organize repositories for infrastructure and application code, and should they be kept together or separately?
+17. Suppose an application team requests a new VM. What would be your end-to-end approach for provisioning the VM using reusable Terraform modules and handing it over to the application team?
+18. How would you structure your Terraform code using root modules, child modules, `locals.tf`, `for_each`, and `tfvars` to follow the **DRY (Don't Repeat Yourself)** principle, so that common resources (Key Vault, Recovery Services Vault, Resource Group, etc.) don't need to be defined for every VM?
+19. Which Terraform meta-arguments support **key-value pairs**, and when would you use `for_each`, `count`, `map`, or nested maps?
+20. What is your Azure experience? Have you worked only on Azure or on other cloud platforms as well?
+21. Have you been involved in cloud migration? If you had to migrate a large on-premises environment (100+ servers, legacy applications) to Azure with minimal downtime, how would you design the migration strategy using the **Cloud Adoption Framework (CAF)**, **Landing Zone**, **Hub-and-Spoke architecture**, **RPO/RTO**, and automation?
+22. During migration, if private VMs need temporary internet access to download software while still remaining secure, how would you provide outbound internet connectivity without assigning Public IP addresses?
+23. What automation have you worked on recently, and what scripting languages or tools (PowerShell, Bash, Python, AI tools like Copilot) have you used?
+24. Suppose you're writing a Python automation script that collects information from Azure resources, but the resource names have inconsistent letter casing (uppercase/lowercase). How would you write the script so it works regardless of case sensitivity?
+25. If users suddenly cannot access an Azure VM (RDP/SSH), what would be your end-to-end troubleshooting approach?
+26. Have you worked with Azure Policy? Explain the hierarchy (**Definition → Initiative → Assignment → Remediation**) and describe how you would create a custom policy to restrict resource deployment to a specific Azure region (e.g., Central India).
+27. Have you worked with Azure Monitor or New Relic? Suppose your monitoring platform suddenly generates hundreds of alerts. As an architect, how would you investigate the issue, distinguish between genuine incidents, false positives, duplicate alerts, and threshold misconfigurations, identify the root cause, and decide the appropriate corrective actions?
+28. Have you worked with Azure Private Endpoints? Suppose a VM suddenly loses connectivity to a Storage Account over a Private Endpoint after a Terraform or network change. How would you troubleshoot the issue, including verifying **Private DNS Zone** resolution, **NSGs**, **UDRs**, firewall rules, port **443**, and other network configurations?
+29. If you need temporary access to a Storage Account owned by another team, but they cannot grant you RBAC permissions, how would you securely access the Storage Account? Explain the use of **SAS Tokens** and when you would choose them over RBAC.
+[7/27, 4:35 PM] Ashish - DevOpsInsiders: Cognizant 2nd round 14 July
+
+
+1. What are your day-to-day responsibilities in your current project?
+2. Which CI/CD tool do you use?
+3. Have you created custom Terraform modules or built infrastructure from scratch?
+4. How do you design reusable Terraform modules for multiple environments (Dev, UAT, Prod), and how can a single module be reused across all environments?
+5. What are Terraform Workspaces, why are they used, what are their benefits, and when would you use them instead of separate environment folders?
+6. How would you plan and execute a Terraform version upgrade (e.g., from 0.x to 1.x), and what compatibility checks would you perform before upgrading?
+7. What is the purpose of `null_resource` in Terraform, and can you give a practical use case?
+8. What is a Terraform `data` block, and how do you use it to reference existing Azure resources in your code?
+9. If one VM becomes corrupted after deployment, how would you redeploy only that VM using Terraform?
+10. If the Terraform state file gets corrupted, how would you recover it, and what are the best practices to protect the state file?
+11. How do you securely manage sensitive information such as passwords, keys, and certificates in Terraform, and how do you integrate Azure Key Vault?
+12. How would you import existing Azure resources into Terraform so they can be managed as Infrastructure as Code?
+13. What is Terraform Drift, and how do you detect and safely handle manual changes made through the Azure Portal before running `terraform plan` and `terraform apply`?
+14. Have you worked with Azure Verified Modules (AVM) or Cloud Adoption Framework (CAF) Terraform modules?
+15. How do you structure your Terraform projects using root and child modules, and do you build your own modules or reuse existing ones?
+16. How do you organize repositories for infrastructure and application code, and should they be kept together or separately?
+17. Suppose an application team requests a new VM. What would be your end-to-end approach for provisioning the VM using reusable Terraform modules and handing it over to the application team?
+18. How would you structure your Terraform code using root modules, child modules, `locals.tf`, `for_each`, and `tfvars` to follow the **DRY (Don't Repeat Yourself)** principle, so that common resources (Key Vault, Recovery Services Vault, Resource Group, etc.) don't need to be defined for every VM?
+19. Which Terraform meta-arguments support **key-value pairs**, and when would you use `for_each`, `count`, `map`, or nested maps?
+20. What is your Azure experience? Have you worked only on Azure or on other cloud platforms as well?
+21. Have you been involved in cloud migration? If you had to migrate a large on-premises environment (100+ servers, legacy applications) to Azure with minimal downtime, how would you design the migration strategy using the **Cloud Adoption Framework (CAF)**, **Landing Zone**, **Hub-and-Spoke architecture**, **RPO/RTO**, and automation?
+22. During migration, if private VMs need temporary internet access to download software while still remaining secure, how would you provide outbound internet connectivity without assigning Public IP addresses?
+23. What automation have you worked on recently, and what scripting languages or tools (PowerShell, Bash, Python, AI tools like Copilot) have you used?
+24. Suppose you're writing a Python automation script that collects information from Azure resources, but the resource names have inconsistent letter casing (uppercase/lowercase). How would you write the script so it works regardless of case sensitivity?
+25. If users suddenly cannot access an Azure VM (RDP/SSH), what would be your end-to-end troubleshooting approach?
+26. Have you worked with Azure Policy? Explain the hierarchy (**Definition → Initiative → Assignment → Remediation**) and describe how you would create a custom policy to restrict resource deployment to a specific Azure region (e.g., Central India).
+27. Have you worked with Azure Monitor or New Relic? Suppose your monitoring platform suddenly generates hundreds of alerts. As an architect, how would you investigate the issue, distinguish between genuine incidents, false positives, duplicate alerts, and threshold misconfigurations, identify the root cause, and decide the appropriate corrective actions?
+28. Have you worked with Azure Private Endpoints? Suppose a VM suddenly loses connectivity to a Storage Account over a Private Endpoint after a Terraform or network change. How would you troubleshoot the issue, including verifying **Private DNS Zone** resolution, **NSGs**, **UDRs**, firewall rules, port **443**, and other network configurations?
+29. If you need temporary access to a Storage Account owned by another team, but they cannot grant you RBAC permissions, how would you securely access the Storage Account? Explain the use of **SAS Tokens** and when you would choose them over RBAC.
+[7/27, 4:35 PM] Ashish - DevOpsInsiders: Wipro L3 Devops engineer interview question 
+
+Introduction
+
+1. Tell me about yourself.
+2. What is your current role?
+3. What project are you working on?
+4. Which organization are you working for?
+5. Is your project Azure-based?
+6. Do you have AWS experience?
+
+⸻
+
+Azure DevOps / CI-CD
+
+1. Explain your CI/CD pipeline.
+2. What are the stages in your Azure DevOps pipeline?
+3. How does the pipeline start after the developer pushes code?
+4. Difference between Classic Pipeline and YAML Pipeline.
+5. What are Azure DevOps Agents?
+6. Difference between Microsoft-hosted Agent and Self-hosted Agent.
+7. What are Variable Groups?
+8. How do you integrate Terraform with Azure DevOps?
+9. If a pipeline fails during deployment, how do you troubleshoot it?
+10. What if your pipeline suddenly starts taking twice as much time as before?
+
+⸻
+
+Terraform
+
+1. What is Terraform State File?
+2. Why do we store the State File remotely?
+3. What is the Terraform workflow?
+4. What happens if someone manually changes a resource managed by Terraform?
+5. What is Configuration Drift?
+6. What happens if Terraform Apply fails after creating some resources?
+7. How do you recover a deleted Terraform State File?
+8. Which command do you use to recover Terraform State?
+9. Difference between Terraform Plan and Apply.
+10. What is Terraform Taint? (he asked “terraform taint”)
+
+⸻
+
+Azure Scenarios
+
+1. A website becomes slow but Azure Monitor shows everything is green. What will you check?
+2. CPU utilization reaches 100%. What will you do?
+3. Website returns HTTP 503 after deployment. What will you check?
+4. Production database becomes slow. What will you check?
+5. OS is running slow but CPU and Memory look normal. What will you check?
+6. Pipeline deployment fails because backend is inaccessible. How will you fix it?
+
+⸻
+
+Linux
+
+1. What is a Cron Job?
+2. A Cron Job hasn’t run for 3 days. How will you troubleshoot it?
+
+⸻
+
+Docker / Kubernetes
+
+1. How will you deploy an application to 500+ servers in different geographical regions?
+2. What is CrashLoopBackOff?
+3. How will you troubleshoot CrashLoopBackOff?
+4. Difference between DaemonSet and Deployment.
+5. What is HPA (Horizontal Pod Autoscaler)?
+6. What is Cluster Autoscaler?
+7. What is Blue-Green Deployment?
+8. What is Canary Deployment?
+9. What is Helm Rollback?
+10. If someone deletes a Kubernetes namespace in Production, what will you do?
+11. What if Pods become unhealthy after deployment?
+12. What will you check if the Ingress is not working?
+
+⸻
+
+Monitoring
+
+1. Which monitoring tool have you used?
+2. Have you used Azure Monitor?
+3. Have you used Nagios?
+4. How do you monitor deployments?
+
+⸻
+
+Security
+
+1. How do you secure Azure DevOps?
+2. How do you secure your Azure environment?
+3. Difference between Security Group and NACL? (AWS networking question)
+
+⸻
+
+Vulnerability / DevSecOps
+
+1. What will you do if vulnerability scanning reports a critical vulnerability?
+2. How do you handle security vulnerabilities during deployment?
+
+⸻
+
+Production Scenarios
+
+1. Tell me about a Production Incident you handled.
+2. Have you ever rolled back a Production deployment?
+3. What was the reason?
+4. How did you troubleshoot it?
+
+⸻
+
+GitOps / ArgoCD
+
+1. Have you worked on ArgoCD?
+2. Suppose a Helm chart change impacts all production clusters. What will you do?
+
+⸻
+
+AI
+
+1. Have you worked on LangChain?
+
+⸻
+
+AWS
+
+1. What happens if someone manually changes an AWS resource managed by Terraform?
+2. Difference between Security Groups and NACL.
+[7/27, 4:35 PM] Ashish - DevOpsInsiders: Interview Experience in Tarento Technologies.  1. Discussed about my Project . 2. Questions asked on AKS cluster and deployment methods . 3. Asked me my project structure in terraform . 4. Asked me about how in our project we handle the state file . 5. Asked about exporters and metrics in Prometheus . 6. Some more questions on promet heus and Graphana and Argocd
+[7/27, 4:35 PM] Ashish - DevOpsInsiders: If a VM goes down unexpectedly, the first step is to identify whether it's a compute issue or a disk issue. If the OS and data disks are healthy, I restart the VM. If the VM is corrupted, I attach its managed disk to another VM and recover the data. If the VM is unrecoverable, I restore it from Azure Backup using a Recovery Services Vault and the latest recovery point. In production environments, we configure scheduled backups and snapshots so that recovery can be performed with minimal data loss
+[7/27, 4:35 PM] Ashish - DevOpsInsiders: *DXC Interview Questions (15 July 2026)*
+
+1. Are you okay to work in the US shift (5 AM onwards)?
+2. Rate yourself in Terraform out of 10.
+3. Rate yourself in CI/CD out of 10.
+4. How do you troubleshoot a failed Terraform deployment? (Step by step)
+5. Explain one real-time Terraform issue you fixed recently.
+6. Which branching strategy do you recommend in Azure DevOps?
+7. Do you have experience with Azure RBAC?
+8. What are the built-in RBAC roles?
+9. How do you manage secrets? (Azure Key Vault)
+10. Terraform state file is corrupted in production. How do you handle it?
+11. Which Terraform commands are used to restore the state file?
+12. During deployment, Terraform accidentally deleted the Application Gateway. How will you handle the production outage?
+13. How does the Terraform state file work in an enterprise environment?
+14. How do you design a CI/CD pipeline? Explain all stages.
+15. What is Infrastructure Drift?
+16. How do you detect and fix Infrastructure Drift?
+
+*Feedback:*
+Interviewer was mainly focused on *Terraform Production Scenarios* and *Azure DevOps CI/CD*. Strong hands-on experience was expected.
+[7/27, 4:35 PM] Ashish - DevOpsInsiders: Company- GSpann 1st round.
+1. Azure Landing Zone
+2. Two vnet are there and both are in same ip range how th

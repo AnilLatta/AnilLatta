@@ -1,0 +1,313 @@
+Sure. Think of Azure Landing Zone like building a big school for a group of children.
+
+🏫 Azure Landing Zone = A Ready-Made School
+
+Imagine a school has many classrooms:
+
+👦 Child A = Application 1
+
+👧 Child B = Application 2
+
+👦 Child C = Application 3
+
+
+Before children enter the school, we need to prepare the school properly.
+
+1. 🏫 The School Building = Azure Tenant
+
+Your Azure Tenant is the entire school.
+
+Inside it, you organize everything.
+
+Azure Tenant
+│
+├── Management Groups
+│
+├── Subscriptions
+│
+├── Resource Groups
+│
+└── Resources
+
+2. 🗂️ Management Groups = School Departments
+
+Suppose the school has:
+
+School
+│
+├── Production Department
+├── Development Department
+└── Testing Department
+
+In Azure:
+
+Root Management Group
+│
+├── Production
+├── Development
+└── Non-Production
+
+Management Groups help you apply policies and governance to many subscriptions together.
+
+
+---
+
+3. 🎒 Subscription = Child's School Bag
+
+Each child gets their own bag.
+
+Similarly, each workload/team can get its own Azure Subscription.
+
+For example:
+
+Production Subscription
+│
+├── Web Application
+├── Database
+└── Storage
+
+Development Subscription
+│
+├── Web Application
+├── Database
+└── Storage
+
+This gives you:
+
+Cost separation
+
+Access control
+
+Resource isolation
+
+Security boundaries
+
+
+
+---
+
+4. 🔐 Security = School Rules
+
+The school has rules:
+
+> "Don't enter the teacher's room."
+
+
+
+Azure has rules using Azure Policy:
+
+> "Don't create resources outside approved regions."
+
+
+
+Example:
+
+Azure Policy
+      ↓
+Only allow:
+West Europe
+East US
+
+If someone tries to deploy somewhere else → 🚫 blocked.
+
+
+---
+
+5. 🚪 Identity = School ID Card
+
+Every student has an ID card.
+
+Azure uses Microsoft Entra ID for identity.
+
+User
+ ↓
+Entra ID
+ ↓
+Authentication
+ ↓
+Authorization
+ ↓
+Azure Resource
+
+So Azure knows:
+
+> "Who are you and what are you allowed to access?"
+
+
+
+
+---
+
+6. 🌐 School Roads = Networking
+
+The school needs roads connecting different buildings.
+
+Azure uses:
+
+Virtual Network (VNet)
+
+Subnets
+
+VPN
+
+ExpressRoute
+
+Firewall
+
+Private Endpoints
+
+DNS
+
+
+For example:
+
+Internet
+   │
+   ▼
+Azure Firewall
+   │
+   ▼
+Application VNet
+   │
+   ├── Web Subnet
+   ├── App Subnet
+   └── DB Subnet
+
+
+---
+
+7. 📋 Principal's Rules = Governance
+
+The school principal wants to know:
+
+> Who created what?
+How much money are we spending?
+Are students following rules?
+
+
+
+Azure Landing Zone provides governance through:
+
+Azure Policy
+
+RBAC
+
+Cost Management
+
+Management Groups
+
+Resource locks
+
+Monitoring
+
+Logging
+
+
+
+---
+
+🧒 Now imagine opening a new classroom
+
+You want to deploy a new application.
+
+Without Landing Zone:
+
+Developer
+   ↓
+Creates random Azure resources
+   ↓
+Random network
+   ↓
+Random permissions
+   ↓
+Security problems 😵
+
+With Landing Zone:
+
+Landing Zone
+     ↓
+Approved Subscription
+     ↓
+Approved Network
+     ↓
+Approved Identity
+     ↓
+Approved Security Policies
+     ↓
+Monitoring + Logging
+     ↓
+Deploy Application ✅
+
+The easiest definition to remember
+
+> Azure Landing Zone is a pre-configured and governed Azure environment where applications can be deployed safely, consistently, and at scale.
+
+
+
+🧠 Interview analogy
+
+If an interviewer asks "Why do we need Azure Landing Zone?", say:
+
+> "Think of it as preparing the entire school infrastructure before students arrive. We establish identity, networking, security, governance, policies, subscriptions, monitoring, and cost controls first. Once that foundation is ready, application teams can deploy workloads consistently without rebuilding the infrastructure and security model every time."
+
+
+
+In one picture:
+
+AZURE TENANT
+                      │
+              MANAGEMENT GROUP
+                      │
+       ┌──────────────┼──────────────┐
+       ▼              ▼              ▼
+   Production     Development    Non-Production
+   Subscription   Subscription   Subscription
+       │              │              │
+       ▼              ▼              ▼
+     VNet            VNet            VNet
+       │              │              │
+   ┌───┴───┐
+
+
+
+
+
+| Feature                            | Load Balancer                                                 | Application Gateway                                          |
+| ---------------------------------- | ------------------------------------------------------------- | ------------------------------------------------------------ |
+| **OSI Layer**                      | Layer 4 (Transport - TCP/UDP)                                 | Layer 7 (Application - HTTP/HTTPS/WebSocket)                 |
+| **Traffic Type**                   | Any TCP/UDP traffic                                           | HTTP/HTTPS traffic only                                      |
+| **Routing**                        | Based on IP address and port                                  | Based on URL path, hostname, headers, cookies, etc.          |
+| **SSL/TLS Termination**            | Limited or not supported (depends on implementation)          | Yes, supports SSL offloading/termination                     |
+| **Web Application Firewall (WAF)** | No                                                            | Yes (often available as an option)                           |
+| **Session Affinity**               | Basic                                                         | Advanced (cookie-based)                                      |
+| **Performance**                    | Very high, low latency                                        | Slightly more processing due to application-layer inspection |
+| **Common Use Cases**               | Load balancing VMs, databases, gaming servers, APIs using TCP | Hosting websites, microservices, reverse proxy, API routing  |
+
+
+WAF ke main components
+WAF Policy
+Ye WAF ka main configuration object hai.
+Isme security rules, custom rules, managed rules etc. define hote hain.
+Managed Rules
+Predefined security rules.
+Common web attacks detect karte hain, jaise:
+SQL Injection
+Cross-Site Scripting (XSS)
+Command Injection
+Azure mein generally OWASP CRS based rules use hote hain.
+Custom Rules
+Apne business/security requirement ke according rules banate hain.
+
+Example:
+
+If Source IP = 1.2.3.4
+→ Block
+Detection / Prevention Mode
+Detection: attack ko detect/log karega, but traffic ko block nahi karega.
+Prevention: malicious traffic ko detect karke block karega.
+Exclusions
+Kisi specific request parameter, header, cookie, URI etc. ko WAF inspection se exclude kar sakte ho.
+False positives reduce karne ke liye useful.
+Logs & Monitoring
+WAF requests aur blocked traffic ke logs generate karta hai.
+Azure Monitor / Log Analytics ke through analysis kar sakte ho.
