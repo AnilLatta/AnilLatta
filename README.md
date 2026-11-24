@@ -513,6 +513,12 @@ flowchart TD
 | **[crash-course](https://github.com/AnilLatta/crash-course)** | `Git` `GitHub` `CI/CD` | Comprehensive learning repository covering Git workflows, branching strategies, and pipeline essentials. |
 | **[test](https://github.com/AnilLatta/test)** | `Git` `Sandbox` | Sandbox repository for pipeline verification, webhook testing, and integration checks. |
 
+### 📚 4. DevOps, Cloud & Knowledge Vault
+
+| Repository | Core Tech Stack | Architectural & Operational Description |
+| :--- | :--- | :--- |
+| **[links](https://github.com/AnilLatta/links)** | `DevOps` `Cloud Docs` `Interview Prep` `Study Guides` | Curated Knowledge Vault containing 2500+ interview Q&As, Azure architecture guides, Cisco VPN templates, Docker & K8s handbooks, and interview handbooks. |
+
 <p align="center">
   <b>📄 For complete links, clone commands, and direct paths, see <a href="./LINKS.md">LINKS.md</a>.</b>
 </p>

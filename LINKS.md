@@ -108,6 +108,7 @@
 14. **[crash-course](https://github.com/AnilLatta/crash-course)** — Git workflows, branching models, and pipeline essentials.
 15. **[test](https://github.com/AnilLatta/test)** — Sandbox testing repository for CI/CD experiments and webhooks.
 16. **[AnilLatta](https://github.com/AnilLatta/AnilLatta)** — Master GitHub Profile README repository with live telemetry and diagrams.
+17. **[links](https://github.com/AnilLatta/links)** — Curated DevOps, Cloud & Platform Engineering Knowledge Vault containing 2500+ interview Q&As, architecture guides, Cisco VPN templates, and study docs.
 
 ---
 
